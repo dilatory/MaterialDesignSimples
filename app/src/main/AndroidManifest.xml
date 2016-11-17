@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="sample.xiangkai.com.materialdesignsamples" >
+          package="sample.xiangkai.com.materialdesignsamples">
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
-        <activity android:name=".MainActivity" >
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".ABLActivity"/>
+        <activity android:name=".FABDrawerActivity"/>
+        <activity android:name=".TabBottomActivity"/>
+        <activity android:name=".TabTopActivity"/>
+        <activity android:name=".ExtendBehaviorActivity"/>
     </application>
 
 </manifest>
