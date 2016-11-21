@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="4dp"
             android:layout_toRightOf="@id/civ_avatar"
-            android:text="Github：有点慢吞吞"
+            android:text="Github：嘉阳"
             android:textColor="@color/black"
             android:textSize="14dp"/>
 

@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">MaterialDesignSamples</string>
     <string name="close">close</string>
+    <string name="github_name">jiayang</string>
 </resources>

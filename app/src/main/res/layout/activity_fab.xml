@@ -58,16 +58,77 @@
             app:layout_behavior="sample.xiangkai.com.materialdesignsamples.behavior.DisplayFabBehavior"/>
     </android.support.design.widget.CoordinatorLayout>
 
+    <!--左导航菜单-->
     <LinearLayout
         android:layout_width="250dp"
         android:layout_height="match_parent"
         android:layout_gravity="left"
         android:background="@color/white"
-        android:gravity="center">
+        android:orientation="vertical">
+        <!--header-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_32"
+                android:adjustViewBounds="true"
+                android:src="@mipmap/logo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/github_name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp_16"/>
+        </LinearLayout>
+        <!--item 1-->
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Menu Content"/>
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_16">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/all"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_32"
+                android:text="home"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dp_16"/>
+        </LinearLayout>
+        <!--item 2-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_16">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/statistics"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_32"
+                android:text="statistics"
+                android:textColor="@color/black"
+                android:textSize="16dp"/>
+        </LinearLayout>
     </LinearLayout>
 </android.support.v4.widget.DrawerLayout>
