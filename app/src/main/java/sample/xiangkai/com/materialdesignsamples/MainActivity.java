@@ -15,6 +15,7 @@ import sample.xiangkai.com.materialdesignsamples.adapter.MainAdapter;
 
 public class MainActivity extends AppCompatActivity {
 
+    //master test commit
     @Bind(R.id.recycler_view)
     RecyclerView recyclerView;
     private MainAdapter adapter;
