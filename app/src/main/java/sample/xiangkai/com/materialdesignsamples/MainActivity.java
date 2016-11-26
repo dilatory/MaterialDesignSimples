@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
         //添加分支dev2
+        //再创建一次新的提交
 
         setupRecyclerView();
     }
