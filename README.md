@@ -22,5 +22,3 @@ MaterialDesign的几个最常见使用方式举例。
 5.**顶部滚动菜单栏**  
 
 ![s4](./screenshot/s4.png)
-
-//from test
