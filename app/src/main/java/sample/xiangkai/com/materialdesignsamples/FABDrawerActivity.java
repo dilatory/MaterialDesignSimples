@@ -2,8 +2,10 @@ package sample.xiangkai.com.materialdesignsamples;
 
 import android.content.res.Configuration;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -36,6 +38,8 @@ public class FABDrawerActivity extends AppCompatActivity {
     private ActionBarDrawerToggle toggle;
     @Bind(R.id.tool_bar)
     Toolbar toolBar;
+    @Bind(R.id.navigation_view)
+    NavigationView navigationView;
 
     @OnClick(R.id.fab)
     void onClick() {
@@ -66,6 +70,14 @@ public class FABDrawerActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         //如何将toobar左上角图标变为白色 遗留问题
         toggle.syncState();
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                item.setChecked(true);
+                drawerLayout.closeDrawers();
+                return true;
+            }
+        });
     }
 
     private void setupTabLayout() {
